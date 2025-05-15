@@ -16,7 +16,7 @@ function writeFile(filename, data) {
     console.log(`Wrtting to ${filename}`);
     console.log(`Data: ${data}`);
 
-    fs.writeFile(filename, data, (err) => {
+    fs.writeFile(filename, data,(err) => {
         if (err) {
             console.error(`Error reading file: ${err}`);
             return;
